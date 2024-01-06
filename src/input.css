@@ -18,4 +18,11 @@
   .section--header {
     @apply text-lg font-medium text-center;
   }
+
+  .active {
+    @apply text-red;
+  }
+  .hiddenTag {
+    @apply hidden !important;
+  }
 }
