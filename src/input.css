@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-dark;
+    height: 20000px;
+  }
+
+  nav {
+    direction: rtl;
+  }
+}
