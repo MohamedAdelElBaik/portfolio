@@ -447,7 +447,6 @@ video {
 body {
   --tw-text-opacity: 1;
   color: rgb(33 36 61 / var(--tw-text-opacity));
-  height: 20000px;
 }
 
 nav {
@@ -626,8 +625,25 @@ nav {
   margin-bottom: 2rem;
 }
 
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -665,6 +681,10 @@ nav {
 
 .items-center {
   align-items: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -772,6 +792,11 @@ nav {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -789,6 +814,11 @@ nav {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
