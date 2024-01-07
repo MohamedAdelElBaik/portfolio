@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
 @layer base {
   body {
     @apply text-dark;
+    font-family: 'heebo', 'Arial Narrow Bold', sans-serif;
+    width: clamp(800px, 80vw, 1300px);
+    margin: auto;
   }
 
   nav {
