@@ -501,11 +501,6 @@ nav {
   margin-right: 1.5rem;
 }
 
-.light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 247 250 / var(--tw-bg-opacity));
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -606,18 +601,6 @@ nav {
   --tw-backdrop-sepia:  ;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.col-end-5 {
-  grid-column-end: 5;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -634,10 +617,6 @@ nav {
   height: 0.25rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .w-2\/4 {
   width: 50%;
 }
@@ -650,13 +629,17 @@ nav {
   width: 1.5rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .max-w-56 {
@@ -679,8 +662,52 @@ nav {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-x-72 {
+  -moz-column-gap: 18rem;
+       column-gap: 18rem;
+}
+
+.gap-x-52 {
+  -moz-column-gap: 13rem;
+       column-gap: 13rem;
+}
+
+.gap-x-7 {
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -717,6 +744,10 @@ nav {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .rounded-full {
@@ -837,24 +868,48 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  @media (min-width: 768px) {
+    .md\:white-space-x-big > * > * {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
   }
 
-  .md\:col-start-2 {
-    grid-column-start: 2;
+  @media (min-width: 1024px) {
+    .md\:white-space-x-big > * > * {
+      margin-left: 7rem;
+      margin-right: 7rem;
+    }
   }
 
-  .md\:col-end-2 {
-    grid-column-end: 2;
+  @media (min-width: 1280px) {
+    .md\:white-space-x-big > * > * {
+      margin-left: 13rem;
+      margin-right: 13rem;
+    }
   }
 
-  .md\:col-end-5 {
-    grid-column-end: 5;
+  @media (min-width: 1536px) {
+    .md\:white-space-x-big > * > * {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
   }
 
-  .md\:row-start-1 {
-    grid-row-start: 1;
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:row-span-3 {
+    grid-row: span 3 / span 3;
   }
 
   .md\:grid {
@@ -865,12 +920,48 @@ nav {
     display: none;
   }
 
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .md\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
   }
 
   .md\:bg-white {
@@ -878,8 +969,16 @@ nav {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-5xl {

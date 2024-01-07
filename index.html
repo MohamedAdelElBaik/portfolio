@@ -8,7 +8,7 @@
     <!-- <script src="index.js"></script> -->
     <script type="module" src="index.js"></script>
   </head>
-  <body class="space-y-8 white-space-x">
+  <body class="space-y-8 white-space-x md:white-space-x-big">
     <nav class="">
       <div
         class="nav-icon flex flex-col space-y-1 cursor-pointer w-fit p-2 md:hidden"
@@ -23,26 +23,37 @@
         <a class="nav-item" href="#works"><li class="p-3">work</li></a>
       </ul>
     </nav>
-    <header id="about-me" class="f-col">
-      <img src="./images/user.webp" alt="user" class="rounded-full w-2/4" />
-      <div class="f-col text-center">
-        <h1 class="text-3xl md:text-5xl font-bold">
-          Hi, I am John, Creative Technologist
-        </h1>
-        <p class="text-base">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. In illum,
-          consequatur, ullam eum esse impedit, debitis blanditiis non culpa quas
-          nisi distinctio officia? A quasi delectus eum tenetur. Nemo, quae?
-        </p>
-        <button class="bg-red text-white rounded-sm px-3 py-2 w-52 md:text-xl">
-          Download Resume
-        </button>
+    <header id="about-me">
+      <div class="f-col md:flex-row-reverse">
+        <img
+          src="./images/user.webp"
+          alt="user"
+          class="rounded-full w-2/4 md:w-1/4"
+        />
+        <div class="f-col text-center md:text-start md:items-start md:pr-16">
+          <h1 class="text-3xl md:text-5xl font-bold self-start">
+            Hi, I am John, Creative Technologist
+          </h1>
+          <p class="text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In illum,
+            consequatur, ullam eum esse impedit, debitis blanditiis non culpa
+            quas nisi distinctio officia? A quasi delectus eum tenetur. Nemo,
+            quae?
+          </p>
+          <button
+            class="bg-red text-white rounded-sm px-3 py-2 w-52 md:text-xl"
+          >
+            Download Resume
+          </button>
+        </div>
       </div>
     </header>
-    <section id="posts" class="bg-light f-col py-6">
+    <section id="posts" class="bg-light space-y-4 py-6">
       <h2 class="section--header md:text-left">Recent posts</h2>
-      <div class="font-medium space-y-4">
-        <div class="bg-white p-4 rounded-md max-w-96 space-y-3">
+      <div
+        class="font-medium flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center"
+      >
+        <div class="bg-white p-4 rounded-md space-y-3 max-w-96">
           <h3 class="text-2xl font-bold">
             Making a design system from scratch
           </h3>
@@ -55,7 +66,7 @@
             vitae modi.
           </p>
         </div>
-        <div class="bg-white p-4 rounded-md max-w-96 space-y-3">
+        <div class="bg-white p-4 rounded-md space-y-3 max-w-96">
           <h3 class="text-2xl font-bold">
             Making a design system from scratch
           </h3>
@@ -70,17 +81,19 @@
         </div>
       </div>
     </section>
-    <section id="works" class="bg-white f-col">
-      <h2 class="section--header">Featured works</h2>
+    <section id="works" class="bg-white space-y-4">
+      <h2 class="section--header md:text-start">Featured works</h2>
 
-      <div class="f-col md:grid md:grid-cols-4 md:grid-rows-2 items-center">
+      <div
+        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
+      >
         <img
           src="./images/work1.jpg"
           alt="dashboard"
-          class="rounded-md w-96 h-96 md:col-start-1 md:col-end-2 md:row-start-1"
+          class="rounded-md md:col-span-1 md:row-span-3"
         />
         <div
-          class="flex flex-col space-y-3 md:col-start-2 md:col-end-5 md:row-start-1"
+          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
         >
           <h3 class="text-2xl font-bold">Design dashboards</h3>
           <div class="flex space-x-3 items-center">
@@ -94,11 +107,61 @@
             a nobis.
           </p>
         </div>
-        <hr class="opacity-20 col-start-1 col-end-5 row-start-2" />
+        <hr class="opacity-20 md:col-span-4" />
+      </div>
+      <div
+        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
+      >
+        <img
+          src="./images/work1.jpg"
+          alt="dashboard"
+          class="rounded-md md:col-span-1 md:row-span-3"
+        />
+        <div
+          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+        >
+          <h3 class="text-2xl font-bold">Design dashboards</h3>
+          <div class="flex space-x-3 items-center">
+            <div class="badge">2020</div>
+            <h4 class="opacity-50">Dashboard</h4>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            optio consectetur nam doloribus. Veritatis, magni iusto soluta non
+            eaque reiciendis recusandae ea illum ex, ipsam molestias ipsum quas
+            a nobis.
+          </p>
+        </div>
+        <hr class="opacity-20 md:col-span-4" />
+      </div>
+      <div
+        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
+      >
+        <img
+          src="./images/work1.jpg"
+          alt="dashboard"
+          class="rounded-md md:col-span-1 md:row-span-3"
+        />
+        <div
+          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+        >
+          <h3 class="text-2xl font-bold">Design dashboards</h3>
+          <div class="flex space-x-3 items-center">
+            <div class="badge">2020</div>
+            <h4 class="opacity-50">Dashboard</h4>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            optio consectetur nam doloribus. Veritatis, magni iusto soluta non
+            eaque reiciendis recusandae ea illum ex, ipsam molestias ipsum quas
+            a nobis.
+          </p>
+        </div>
+        <hr class="opacity-20 md:col-span-4" />
       </div>
     </section>
-    <footer class="bg-white space-y-4 pb-28">
-      <div class="flex justify-between max-w-56 m-auto">
+    <footer class="bg-white space-y-4 pb-28 flex flex-col items-center">
+      <div class="flex justify-between gap-x-8 max-w-56">
         <a href="#"><img src="./images/fb.svg" alt="facebook" /></a>
         <a href="#"><img src="./images/insta.svg" alt="instagram" /></a>
         <a href="#"><img src="./images/Group.svg" alt="twitter" /></a>

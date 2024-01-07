@@ -37,7 +37,7 @@
   .white-space-x > * > * {
     @apply mx-6;
   }
-  .light {
-    @apply bg-light;
+  .white-space-x-big > * > * {
+    @apply md:mx-16 lg:mx-28 xl:mx-52 2xl:mx-64;
   }
 }
