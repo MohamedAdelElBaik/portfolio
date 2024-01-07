@@ -9,18 +9,28 @@
     <script type="module" src="index.js"></script>
   </head>
   <body class="space-y-8 white-space-x md:white-space-x-big">
-    <nav class="">
+    <nav
+      class="md:sticky top-0 bg-white md:bg-opacity-0 border-dark shadow-xl md:shadow-none"
+    >
       <div
-        class="nav-icon flex flex-col space-y-1 cursor-pointer w-fit p-2 md:hidden"
+        class="nav-icon flex flex-col space-y-1 cursor-pointer w-fit pr-2 py-4 md:hidden"
       >
         <span class="w-6 h-1 bg-dark rounded-sm"></span>
         <span class="w-6 h-1 bg-dark rounded-sm"></span>
         <span class="w-6 h-1 bg-dark rounded-sm"></span>
       </div>
-      <ul class="nav-list text-center capitalize font-medium md:bg-white">
-        <a class="nav-item" href="#about-me"><li class="py-3">about me</li></a>
-        <a class="nav-item" href="#posts"><li class="p-3">blog</li></a>
-        <a class="nav-item" href="#works"><li class="p-3">work</li></a>
+      <ul
+        class="nav-list text-center capitalize font-bold flex flex-col md:flex-row"
+      >
+        <a class="nav-item md:bg-light md:px-6" href="#about-me"
+          ><li class="py-3">about me</li></a
+        >
+        <a class="nav-item md:bg-light md:px-6" href="#posts"
+          ><li class="p-3">blog</li></a
+        >
+        <a class="nav-item md:bg-light md:px-6" href="#works"
+          ><li class="p-3">work</li></a
+        >
       </ul>
     </nav>
     <header id="about-me">
@@ -51,7 +61,7 @@
     <section id="posts" class="bg-light space-y-4 py-6">
       <h2 class="section--header md:text-left">Recent posts</h2>
       <div
-        class="font-medium flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center"
+        class="font-medium flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center"
       >
         <div class="bg-white p-4 rounded-md space-y-3 max-w-96">
           <h3 class="text-2xl font-bold">

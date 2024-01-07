@@ -28,6 +28,7 @@
   }
   .hiddenTag {
     @apply hidden !important;
+    @apply md:flex !important;
   }
 
   .f-col {

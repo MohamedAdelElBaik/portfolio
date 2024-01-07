@@ -13,15 +13,16 @@ function removeClass(tag, className) {
 }
 
 navIcon.addEventListener('click', () => {
-  addClass(navIcon, hidden);
-  removeClass(navList, hidden);
+  // addClass(navIcon, hidden);
+  // removeClass(navList, hidden);
+  navList.classList.toggle(hidden);
 });
 
 console.log(navItems);
 navItems.forEach((item) => {
   return item.addEventListener('click', (tag) => {
     // addClass(tag.target, active);
-    removeClass(navIcon, hidden);
+    // removeClass(navIcon, hidden);
     addClass(navList, hidden);
   });
 });
