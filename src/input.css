@@ -29,4 +29,15 @@
   .hiddenTag {
     @apply hidden !important;
   }
+
+  .f-col {
+    @apply flex flex-col space-y-4 items-center;
+  }
+
+  .white-space-x > * > * {
+    @apply mx-6;
+  }
+  .light {
+    @apply bg-light;
+  }
 }
