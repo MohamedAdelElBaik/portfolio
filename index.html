@@ -8,176 +8,163 @@
     <!-- <script src="index.js"></script> -->
     <script type="module" src="index.js"></script>
   </head>
-  <body class="space-y-8 white-space-x md:white-space-x-big">
+  <body class="white-space-x md:white-space-x-big bg-background text-white">
     <nav
-      class="md:sticky top-0 bg-white md:bg-opacity-0 border-dark shadow-xl md:shadow-none"
+      class="md:sticky top-0 bg-backgroundDarker md:bdg-opacity-0 border-dark shadow-xl md:shadow-none md:w-full"
     >
-      <div
-        class="nav-icon flex flex-col space-y-1 cursor-pointer w-fit pr-2 py-4 md:hidden"
-      >
-        <span class="w-6 h-1 bg-dark rounded-sm"></span>
-        <span class="w-6 h-1 bg-dark rounded-sm"></span>
-        <span class="w-6 h-1 bg-dark rounded-sm"></span>
+      <div class="flex justify-between items-center">
+        <div
+          class="nav-icon flex flex-col space-y-1 cursor-pointer w-fit pr-2 py-4 md:hidden"
+        >
+          <span class="w-6 h-1 bg-dark rounded-sm"></span>
+          <span class="w-6 h-1 bg-dark rounded-sm"></span>
+          <span class="w-6 h-1 bg-dark rounded-sm"></span>
+        </div>
+        <h1 class="md:hidden text-2xl font-bold text-primary">Mahmoud Bakir</h1>
       </div>
       <ul
-        class="nav-list text-center capitalize font-bold flex flex-col md:flex-row"
+        class="nav-list text-center capitalize font-bold flex flex-col md:flex-row-reverse md:mr-auto"
       >
         <a class="nav-item md:bg-light md:px-6" href="#about-me"
-          ><li class="py-3">about me</li></a
+          ><li class="py-3">About me</li></a
         >
-        <a class="nav-item md:bg-light md:px-6" href="#posts"
-          ><li class="p-3">blog</li></a
-        >
-        <a class="nav-item md:bg-light md:px-6" href="#works"
-          ><li class="p-3">work</li></a
+        <a class="nav-item md:bg-light md:px-6" href="#projects"
+          ><li class="p-3">Projects</li></a
         >
       </ul>
     </nav>
-    <header id="about-me">
+    <header
+      id="about-me"
+      class="mt-8 md:min-h-screen md:flex justify-center items-center"
+    >
       <div class="f-col md:flex-row-reverse">
         <img
-          src="./images/user.webp"
+          src="./images/mahmoudbakir.jpg"
           alt="user"
-          class="rounded-full w-2/4 md:w-1/4"
+          class="rounded-full w-2/4 md:w-2/5"
         />
         <div class="f-col text-center md:text-start md:items-start md:pr-16">
-          <h1 class="text-3xl md:text-5xl font-bold self-start">
-            Hi, I am John, Creative Technologist
+          <h1 class="text-3xl md:text-5xl font-bold self-stsart text-primary">
+            Mahmoud Bakir
           </h1>
-          <p class="text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In illum,
-            consequatur, ullam eum esse impedit, debitis blanditiis non culpa
-            quas nisi distinctio officia? A quasi delectus eum tenetur. Nemo,
-            quae?
+          <h2
+            class="self-stasrt text-lg md:text-3xl font-medium text-secondary"
+          >
+            Technical office engineer
+          </h2>
+          <p class="text-base md:text-lg">
+            Goal-oriented fresh graduate with bachelor’s degree in electrical
+            engineering and Good academic record. Equipped with unique
+            internship experience as a Site Engineer and good knowledge of
+            designing, shopdrawing, safety, control, Infrastructure, and superb
+            project management skills. Having a very good skill set of AutoCAD,
+            EXCEL, Revit. Seeking a SITE, Design and Maintenance Engineer
+            Position as a part / Full time work which could help me utilize my
+            skills and contribute to the company’s growth and enhance my
+            knowledge.
           </p>
           <button
             class="bg-red text-white rounded-sm px-3 py-2 w-52 md:text-xl"
           >
-            Download Resume
+            <a href="/images//Mahmoud Bakir cv.pdf" download="">
+              Download Resume
+            </a>
           </button>
         </div>
       </div>
     </header>
-    <section id="posts" class="bg-light space-y-4 py-6">
-      <h2 class="section--header md:text-left">Recent posts</h2>
-      <div
-        class="font-medium flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center"
-      >
-        <div class="bg-white p-4 rounded-md space-y-3 max-w-96">
-          <h3 class="text-2xl font-bold">
-            Making a design system from scratch
-          </h3>
-          <h4 class="space-x-4">
-            <span>12 Feb 2020</span> <span>|</span><span>Design, Pattern</span>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            cumque ea corrupti iure, neque earum! Consequuntur qui corrupti
-            vitae modi.
-          </p>
-        </div>
-        <div class="bg-white p-4 rounded-md space-y-3 max-w-96">
-          <h3 class="text-2xl font-bold">
-            Making a design system from scratch
-          </h3>
-          <h4 class="space-x-4">
-            <span>12 Feb 2020</span> <span>|</span><span>Design, Pattern</span>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            cumque ea corrupti iure, neque earum! Consequuntur qui corrupti
-            vitae modi.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="works" class="bg-white space-y-4">
-      <h2 class="section--header md:text-start">Featured works</h2>
 
-      <div
-        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
-      >
-        <img
-          src="./images/work1.jpg"
-          alt="dashboard"
-          class="rounded-md md:col-span-1 md:row-span-3"
-        />
-        <div
-          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+    <main class="flex flex-col gap-10 mt-8">
+      <section id="projects" class="bg-background space-y-4">
+        <h2
+          class="section--header md:text-start text-2xl md:text-4xl text-primary"
         >
-          <h3 class="text-2xl font-bold">Design dashboards</h3>
-          <div class="flex space-x-3 items-center">
-            <div class="badge">2020</div>
-            <h4 class="opacity-50">Dashboard</h4>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            optio consectetur nam doloribus. Veritatis, magni iusto soluta non
-            eaque reiciendis recusandae ea illum ex, ipsam molestias ipsum quas
-            a nobis.
-          </p>
-        </div>
-        <hr class="opacity-20 md:col-span-4" />
-      </div>
-      <div
-        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
-      >
-        <img
-          src="./images/work1.jpg"
-          alt="dashboard"
-          class="rounded-md md:col-span-1 md:row-span-3"
-        />
+          Featured works
+        </h2>
+
         <div
-          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+          class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
         >
-          <h3 class="text-2xl font-bold">Design dashboards</h3>
-          <div class="flex space-x-3 items-center">
-            <div class="badge">2020</div>
-            <h4 class="opacity-50">Dashboard</h4>
+          <img
+            src="./images/project1.jpeg"
+            alt="dashboard"
+            class="rounded-md md:col-span-1 md:row-span-3"
+          />
+          <div
+            class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+          >
+            <h3 class="text-2xl font-bold text-secondary">
+              Mohamed Emam Distribution Diploma 2023
+            </h3>
+            <div class="flex space-x-3 items-center">
+              <div class="badge">2023</div>
+              <h4 class="opacity-50">Oct 2023</h4>
+            </div>
+            <p>
+              1. Illuminate spaces efficiently with our tailored lighting
+              design.<br />
+              2. Power up with a robust system, seamlessly integrating sockets
+              and HVAC.<br />
+              3. Simplify management with a detailed panel schedule.<br />
+              4. Ensure safety with a meticulous earthing system.<br />
+              5. Optimize budgeting with our transparent Bill of Quantities
+              (BOQ).
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            optio consectetur nam doloribus. Veritatis, magni iusto soluta non
-            eaque reiciendis recusandae ea illum ex, ipsam molestias ipsum quas
-            a nobis.
-          </p>
+          <hr class="opacity-20 md:col-span-4" />
         </div>
-        <hr class="opacity-20 md:col-span-4" />
-      </div>
-      <div
-        class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
-      >
-        <img
-          src="./images/work1.jpg"
-          alt="dashboard"
-          class="rounded-md md:col-span-1 md:row-span-3"
-        />
         <div
-          class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+          class="f-col md:grid md:grid-cols-4 md:grid-rows-4 md:space-y-0 md:space-x-4 items-center"
         >
-          <h3 class="text-2xl font-bold">Design dashboards</h3>
-          <div class="flex space-x-3 items-center">
-            <div class="badge">2020</div>
-            <h4 class="opacity-50">Dashboard</h4>
+          <img
+            src="./images/project2.jpeg"
+            alt="dashboard"
+            class="rounded-md md:col-span-1 md:row-span-3"
+          />
+          <div
+            class="flex flex-col space-y-3 md:col-span-3 md:row-span-3 md:self-start"
+          >
+            <h3 class="text-2xl font-bold">New Technology Zone in Bani Suef</h3>
+            <div class="flex space-x-3 items-center">
+              <div class="badge">2023</div>
+              <h4 class="opacity-50">Sep 2022 - Jul 2023</h4>
+            </div>
+            <p>
+              1. Precisely estimate loads with expertise in Transformer,
+              Generator, UPS, and RMU distributor sizing and selection.<br />
+              2. Illuminate spaces effectively through meticulous lighting
+              system design.<br />
+              3. Engineer robust power systems, including panel boards design
+              and single-line diagrams for seamless functionality.<br />
+              4. Implement comprehensive electrical infrastructure and efficient
+              cable routing systems.<br />
+              5. Employ advanced tools like ETAP & ECODIAL for design
+              optimization, ensuring safety with earthing, lightning systems,
+              and integrating renewable energy solutions like PV systems.
+              Complete the package with a detailed Bill of Quantities (BOQ) and
+              precise shop drawings.
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            optio consectetur nam doloribus. Veritatis, magni iusto soluta non
-            eaque reiciendis recusandae ea illum ex, ipsam molestias ipsum quas
-            a nobis.
-          </p>
+          <hr class="opacity-20 md:col-span-4" />
         </div>
-        <hr class="opacity-20 md:col-span-4" />
+      </section>
+    </main>
+
+    <footer class="pb-8 flex flex-col items-center mt-8">
+      <div class="flex justify-between gap-x-8 max-w-40 items-center">
+        <a href="linkedin.com/in/mahmoud-bakir"
+          ><img src="./images/Linkedin.svg" alt="linkedin"
+        /></a>
+        <a href="mailto:mahmoudbakir001@gmail.com"
+          ><img src="./images/mail.svg" alt="email"
+        /></a>
+        <a href="tel:+201553658344">
+          <img src="./images/whatsapp.svg" alt="phone" />
+        </a>
       </div>
-    </section>
-    <footer class="bg-white space-y-4 pb-28 flex flex-col items-center">
-      <div class="flex justify-between gap-x-8 max-w-56">
-        <a href="#"><img src="./images/fb.svg" alt="facebook" /></a>
-        <a href="#"><img src="./images/insta.svg" alt="instagram" /></a>
-        <a href="#"><img src="./images/Group.svg" alt="twitter" /></a>
-        <a href="#"><img src="./images/Linkedin.svg" alt="linkedin" /></a>
-      </div>
-      <h2 class="text-sm text-center">Copyright ©2020 All rights reserved</h2>
+      <h2 class="text-sm text-center font-bold mt-3">
+        mahmoudbakir001@gmail.com | +201553658344
+      </h2>
     </footer>
   </body>
 </html>
