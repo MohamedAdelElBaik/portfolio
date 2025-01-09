@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @layer base {
+  :root {
+    --primary: 295 65% 40%;
+    --secondary: 0 0% 100%;
+    --primary-muted: 216 46% 55%;
+  }
+
   body {
     @apply text-dark;
-    font-family: 'heebo', 'Arial Narrow Bold', sans-serif;
+    font-family: "Plus Jakarta Sans", "Arial Narrow Bold", sans-serif;
     margin: auto;
   }
 
