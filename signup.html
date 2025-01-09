@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-radial-gradient-custom w-full h-full">
+    <main
+      class="flex flex-col items-center justify-center w-full h-screen text-secondary"
+    >
+      <div
+        class="bg-primaryMuted/80 py-8 px-16 rounded-3xl flex flex-col gap-8 items-center min-w-[550px] pb-20"
+      >
+        <h2 class="text-xl">Your logo</h2>
+        <form action="" class="w-[75%] space-y-4">
+          <h1 class="text-2xl w-full">Sign up</h1>
+          <div class="flex flex-col gap-1">
+            <label for="first_name">Enter your first name</label>
+            <input
+              id="first_name"
+              type="text"
+              placeholder="John"
+              class="rounded-md py-2 px-4 text-dark"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="last_name">Enter your last name</label>
+            <input
+              id="last_name"
+              type="text"
+              placeholder="Doe"
+              class="rounded-md py-2 px-4 text-dark"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="email">Your email address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="username@gmail.com"
+              class="rounded-md py-2 px-4 text-dark"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="password"
+              class="rounded-md py-2 px-4 text-dark"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="password_confirm">Confirm password</label>
+            <input
+              id="password_confirm"
+              type="password"
+              placeholder="password"
+              class="rounded-md py-2 px-4 text-dark"
+            />
+          </div>
+
+          <button
+            id="login"
+            class="bg-primary rounded-lg w-full p-2"
+            style="margin-top: 40px"
+          >
+            Sign up
+          </button>
+        </form>
+
+        <div>
+          <a href="/">or continue with</a>
+        </div>
+
+        <section class="flex gap-4">
+          <div class="px-8 py-2 bg-secondary rounded-md">
+            <img
+              class="w-5"
+              src="/public/bi_google.png"
+              alt="sign with google"
+            />
+          </div>
+          <div class="px-8 py-2 bg-secondary rounded-md">
+            <img
+              class="w-5"
+              src="/public/bi_github.png"
+              alt="sign with github"
+            />
+          </div>
+          <div class="px-8 py-2 bg-secondary rounded-md">
+            <img
+              class="w-5"
+              src="/public/bi_facebook.png"
+              alt="sign with facebook"
+            />
+          </div>
+        </section>
+
+        <div>
+          <a class="text-xs" href="/"
+            >Do you have account? <strong>Login now</strong></a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
