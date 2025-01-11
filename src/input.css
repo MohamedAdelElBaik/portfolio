@@ -173,4 +173,19 @@
     border-radius: 0.75rem 0.75rem 0.75rem 0;
     justify-self: start;
   }
+
+  .cu-dashboard-main {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    height: 100%;
+  }
+
+  .cu-dashboard-main .cu-subscription__card {
+    background: rgb(230, 100, 96);
+    background: linear-gradient(
+      93deg,
+      rgba(230, 100, 96, 1) 0%,
+      rgba(80, 100, 238, 1) 100%
+    );
+  }
 }
