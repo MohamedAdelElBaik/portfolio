@@ -9,6 +9,10 @@
     --primary: 295 65% 40%;
     --secondary: 0 0% 100%;
     --primary-muted: 216 46% 55%;
+    --message-green: 174 37% 90%;
+    --message-beige: 28 94% 93%;
+    --message-purple-light: 295 100% 98%;
+    --message-text: 226 27% 48%;
   }
 
   body {
@@ -60,5 +64,113 @@
     .aside-text {
       display: none;
     }
+  }
+
+  .cu-messages-container {
+    display: grid;
+    grid-template-columns: minmax(380px, 450px) minmax(700px, 1fr);
+    /* gap: 1rem; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .cu-message-contact {
+    background-color: hsl(var(--message-purple-light));
+  }
+
+  .cu-message-chat {
+    background-color: #fafafa;
+  }
+
+  .cu-message-contact__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .cu-message-contact__list__item {
+    padding: 1rem;
+    text-align: center;
+    color: hsl(var(--message-text));
+  }
+
+  .cu-message-contact__list__item.active {
+    background-color: hsl(var(--primary));
+    color: #fff;
+  }
+
+  .cu-message-contact__contact {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .cu-message-contact__contact__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .cu-message-contact__contact__details__message .unread {
+    font-weight: 800;
+  }
+
+  .cu-message-contact__contact__details .cu-message-status.unread-number {
+    background-color: hsl(var(--message-green));
+    border-radius: 50%;
+    font-weight: 700;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cu-message-contact__contact__details .cu-message-status.icon {
+    width: 16px;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+
+  .cu-message-chat {
+    display: grid;
+    grid-template-rows: auto 73vh auto;
+  }
+
+  .cu-message-chat__message {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: repeat(20, min-content);
+
+    /* height: 73vh; */
+    overflow-y: scroll;
+  }
+
+  .cu-message-chat__message__content {
+    height: fit-content;
+    width: fit-content;
+    max-width: 80%;
+  }
+
+  .cu-message-chat__message__content.send {
+    background-color: hsl(var(--message-green));
+    border-radius: 0.75rem 0.75rem 0rem 0.75rem;
+    justify-self: end;
+    position: relative;
+    padding-bottom: 1.35rem;
+  }
+  .cu-message-chat__message__content.send span {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .cu-message-chat__message__content.received {
+    background-color: white;
+    border-radius: 0.75rem 0.75rem 0.75rem 0;
+    justify-self: start;
   }
 }

@@ -10,8 +10,13 @@ module.exports = {
         secondary: "hsl(var(--secondary))",
         dark: "#21243D",
         light: "#EDF7FA",
-        white: "#e2e8f0",
+        white: "#fff",
         red: "#FF6464",
+        // messages
+        messageGreen: "hsl(var(--message-green))",
+        messageBeige: "hsl(var(--message-beige))",
+        messagePurpleLight: "hsl(var(--message-purple-light))",
+        messageText: "hsl(var(--message-text))",
       },
       backgroundImage: {
         "radial-gradient-custom":
