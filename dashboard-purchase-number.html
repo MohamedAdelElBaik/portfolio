@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-secondary w-full h-full">
+    <main class="cu-dashboard-container w-full min-h-screen">
+      <aside class="row-span-2 shadow-sm py-12 pt-20 px-3 md:px-8">
+        <div class="flex flex-col justify-between h-full">
+          <ul class="flex flex-col gap-3">
+            <li class="cu-aside-list active">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/category-2.svg" alt="" />
+                <span class="aside-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/message.svg" alt="" />
+                <span class="aside-text">Messages</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/book.svg" alt="" />
+                <span class="aside-text">Bulk SMS</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/book.svg" alt="" />
+                <span class="aside-text">My Numbers</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/user-octagon.svg" alt="" />
+                <span class="aside-text">Purchase Number</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/user-octagon.svg" alt="" />
+                <span class="aside-text">Usage History</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/setting-2.svg" alt="" />
+                <span class="aside-text">Settings</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/user-octagon.svg" alt="" />
+                <span class="aside-text">Manage Subscriptions</span>
+              </a>
+            </li>
+            <li class="cu-aside-list">
+              <a href="/" class="w-full flex gap-2">
+                <img src="./public/side-icons/user-octagon.svg" alt="" />
+                <span class="aside-text">Talk to Sales</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <nav class="shadow-sm flex justify-between items-center gap-4">
+        <section class="flex gap-6 px-4 md:px-8">
+          <div class=""><img src="./public/nav-icons/resize.svg" /></div>
+          <div><img src="./public/nav-icons/Star.svg" /></div>
+        </section>
+
+        <section class="flex items-center gap-6 px-4 md:px-8">
+          <div
+            class="bg-[#f5f5f5] rounded-md py-1 px-2 text-sm flex gap-1 items-center"
+          >
+            <img src="./public/nav-icons/search.svg" alt="" />
+            <input
+              class="bg-inherit w-40 p-1"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class=""><img src="./public/nav-icons/history.svg" /></div>
+          <div><img src="./public/nav-icons/bill.svg" /></div>
+        </section>
+      </nav>
+
+      <section class="bg-[#fafafa] w[900px] p-16 space-y-6">
+        <div class="flex items-center gap-2">
+          <span><img class="w-7" src="./public/nav-icons/search.svg" /></span>
+          <h2 class="text-xl">Find a perfect number for yourself</h2>
+        </div>
+
+        <div class="flex gap-8">
+          <div class="space-y-5 w-full">
+            <div class="cu-purchase-selection">
+              <label for="country">Select country</label>
+              <select name="country" id="select_contry">
+                <option value="US">United State</option>
+                <option value="EN">England</option>
+                <option value="CA">Canada</option>
+              </select>
+            </div>
+
+            <div class="cu-purchase-selection">
+              <label for="country">Select state</label>
+              <select name="country" id="select_contry">
+                <option value="US">United State</option>
+                <option value="EN">England</option>
+                <option value="CA">Canada</option>
+              </select>
+            </div>
+
+            <div class="cu-purchase-selection">
+              <label for="country">Select city</label>
+              <select name="country" id="select_contry">
+                <option value="US">United State</option>
+                <option value="EN">England</option>
+                <option value="CA">Canada</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#141522] text-white px-8 py-16 rounded-lg max-w-56 relative overflow-hidden z-20"
+          >
+            <div
+              class="flex flex-col gap-2 items-center justify-center h-full relative z-20"
+            >
+              <h3 class="">Help Center</h3>
+              <p class="text-xs text-center">
+                Having trouble in purchasing. Please contact us for more
+                questions.
+              </p>
+              <button
+                class="mt-3 text-xs text-dark bg-white rounded-lg p-4 py-2"
+              >
+                Go To Help Center
+              </button>
+            </div>
+            <span
+              class="absolute -top-6 -left-6 bg-slate-600/20 w-16 h-16 rounded-full"
+            ></span>
+            <span
+              class="absolute bottom-8 right-6 bg-slate-600/20 w-24 h-24 rounded-full z-10"
+            ></span>
+          </div>
+        </div>
+        <div class="space-y-4 pt-8">
+          <div class="flex gap-4 items-end justify-between">
+            <div
+              class="flex max-w-80 items-center gap-2 border rounded-lg px-2 py-1 bg-white"
+            >
+              <span
+                ><img src="./public/nav-icons/search.svg" alt="search"
+              /></span>
+              <input
+                class="px-2 py-1 bg-white"
+                type="text"
+                placeholder="Search by number"
+              />
+            </div>
+
+            <div class="flex gap-4 items-center">
+              <span class="text-xs text-[#5a6a9d]">531 result</span>
+              <div class="flex gap-2">
+                <button class="w-8">
+                  <img src="./public/leftArrow.svg" alt="back" />
+                </button>
+                <button class="w-8">
+                  <img src="./public/rightArrow.svg" alt="next" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <table class="cu-table bg-white">
+            <thead>
+              <tr>
+                <th>Phone No.</th>
+                <th>Status</th>
+                <th>Area Code</th>
+                <th>Service</th>
+                <th>Country</th>
+                <th>Provider</th>
+                <th>Price</th>
+                <th>Get Now</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0099885645</td>
+                <td class="cu-table-available"><span>Available</span></td>
+                <td>567</td>
+                <td>ser</td>
+                <td>United States</td>
+                <td>Autotast</td>
+                <td>$2.00</td>
+                <td>
+                  <button class="bg-primary px-3 py-1 rounded-lg text-white">
+                    Purchase
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
