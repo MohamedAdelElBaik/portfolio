@@ -793,6 +793,14 @@ body {
   font-size: 0.7rem;
 }
 
+.cu-message-chat__message.talk-sales {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: repeat(20, min-content);
+  /* height: 73vh; */
+  overflow-y: scroll;
+}
+
 .fixed {
   position: fixed;
 }
@@ -939,36 +947,12 @@ body {
   width: 100%;
 }
 
-.min-w-\[550px\] {
-  min-width: 550px;
-}
-
-.min-w-12 {
-  min-width: 3rem;
-}
-
-.min-w-28 {
-  min-width: 7rem;
-}
-
-.min-w-40 {
-  min-width: 10rem;
-}
-
-.min-w-80 {
-  min-width: 20rem;
-}
-
 .min-w-60 {
   min-width: 15rem;
 }
 
-.min-w-72 {
-  min-width: 18rem;
-}
-
-.min-w-52 {
-  min-width: 13rem;
+.min-w-\[550px\] {
+  min-width: 550px;
 }
 
 .max-w-56 {
@@ -981,18 +965,6 @@ body {
 
 .max-w-80 {
   max-width: 20rem;
-}
-
-.max-w-\[5rem\] {
-  max-width: 5rem;
-}
-
-.max-w-\[15rem\] {
-  max-width: 15rem;
-}
-
-.max-w-\[25rem\] {
-  max-width: 25rem;
 }
 
 .max-w-\[35rem\] {
@@ -1031,6 +1003,10 @@ body {
   gap: 0.25rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1049,10 +1025,6 @@ body {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {

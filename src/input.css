@@ -240,4 +240,13 @@
     border-radius: 1rem;
     font-size: 0.7rem;
   }
+
+  .cu-message-chat__message.talk-sales {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: repeat(20, min-content);
+
+    /* height: 73vh; */
+    overflow-y: scroll;
+  }
 }
