@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+    <header class="bg-primary text-secondary">
+      <ul class="flex justify-end items-center gap-6 py-6 px-16">
+        <a href="/" class="font-semibold border-b-2">
+          <li>Home</li>
+        </a>
+        <a href="/pricing&plans.html">
+          <li>Pricing & Plans</li>
+        </a>
+        <a
+          href="/signup.html"
+          class="uppercase bg-secondary text-primary ml-4 px-4 py-2 rounded-xl"
+        >
+          <li>Sign in</li>
+        </a>
+      </ul>
+    </header>
+
+    <main class="">
+      <!-- START HERO SECTION -->
+      <section
+        class="bg-primary grid grid-cols-2 gap-8 items-center px-16 py-16"
+      >
+        <div class="text-secondary flex flex-col gap-6">
+          <h1 class="text-7xl max-w-[40rem]">
+            Revolutionize Your Communication Today
+          </h1>
+          <p class="text-lg text-secondary/80 max-w-[26rem]">
+            Streamline your conversations with our all-in-one communication
+            solutions tailored for modern businesses.
+          </p>
+          <a
+            href="/"
+            class="bg-secondary text-primary px-4 py-2 rounded-lg w-fit"
+          >
+            <button>Explore Plans & Pricing</button>
+          </a>
+        </div>
+
+        <div><img src="./public/landing-page/main.svg" alt="sms app" /></div>
+      </section>
+      <!-- END HERO SECTION -->
+
+      <!-- START COLLABORATION SECTION -->
+      <section class="bg-secondary px-16 py-16">
+        <h2 class="text-4xl color-[#09132c] text-center">
+          Seamless Conversations and Collaboration
+        </h2>
+        <div class="grid grid-cols-4 mx-auto w-fit gap-6 px-16 pt-6 mt-10">
+          <!-- START COLLABORATION CARD -->
+          <div class="border rounded-xl overflow-hidden pt-6 max-w-64">
+            <div
+              class="bg-[#faeaea] p-4 w-24 aspect-square rounded-full mx-auto mb-4"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./public/landing-page/collaboration/cost.svg"
+                alt="cost"
+              />
+            </div>
+
+            <div
+              class="p-6 relative z-0 flex flex-col gap-4 justify-center items-center text-secondary"
+            >
+              <h3 class="mt-4 text-2xl">Cost Effective</h3>
+              <p class="text-sm text-center">
+                Save more with affordable, feature-rich solutions.
+              </p>
+              <div>
+                <img
+                  src="./public/landing-page/collaboration/go.svg"
+                  alt="see more"
+                />
+              </div>
+
+              <div class="absolute top-0 bottom-0 right-0 left-0 -z-10">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./public/landing-page/collaboration/background.svg"
+                  alt="background"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-xl overflow-hidden pt-6 max-w-64">
+            <div
+              class="bg-[#f5f0e8] p-4 w-24 aspect-square rounded-full mx-auto mb-4"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./public/landing-page/collaboration/relabile.svg"
+                alt="cost"
+              />
+            </div>
+
+            <div
+              class="p-6 relative z-0 flex flex-col gap-4 justify-center items-center text-black"
+            >
+              <h3 class="mt-4 text-2xl text-[#09132c]">Reliable Support</h3>
+              <p class="text-sm text-center text-[#5a6a9d]">
+                Dedicated 24/7 customer care to ensure uninterrupted service.
+              </p>
+              <div>
+                <img
+                  src="./public/landing-page/collaboration/go-2.svg"
+                  alt="see more"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-xl overflow-hidden pt-6 max-w-64">
+            <div
+              class="bg-[#e8f6f5] p-4 w-24 aspect-square rounded-full mx-auto mb-4"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./public/landing-page/collaboration/future.svg"
+                alt="cost"
+              />
+            </div>
+
+            <div
+              class="p-6 relative z-0 flex flex-col gap-4 justify-center items-center text-secondary"
+            >
+              <h3 class="mt-4 text-2xl text-[#09132c]">Future-Ready</h3>
+              <p class="text-sm text-center text-[#5a6a9d]">
+                Cloud-based systems designed for scalability.
+              </p>
+              <div>
+                <img
+                  src="./public/landing-page/collaboration/go-2.svg"
+                  alt="see more"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-xl overflow-hidden pt-6 max-w-64">
+            <div
+              class="bg-[#f4e8f6] p-4 w-24 aspect-square rounded-full mx-auto mb-4"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./public/landing-page/collaboration/scalable.svg"
+                alt="cost"
+              />
+            </div>
+
+            <div
+              class="p-6 relative z-0 flex flex-col gap-4 justify-center items-center text-secondary"
+            >
+              <h3 class="mt-4 text-2xl text-[#09132c]">Scalable Solutions</h3>
+              <p class="text-sm text-center text-[#5a6a9d]">
+                Easily adapt as your business grows.
+              </p>
+              <div>
+                <img
+                  src="./public/landing-page/collaboration/go-2.svg"
+                  alt="see more"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- END COLLABORATION CARD -->
+        </div>
+      </section>
+      <!-- END COLLABORATION SECTION -->
+
+      <!-- START STEPS SECTION -->
+      <section class="bg-[#f9f2fa] px-16 py-16 relative z-10">
+        <div class="grid gap-16 grid-cols-2 w-fit mx-auto">
+          <div class="relative">
+            <div>
+              <img src="./public/landing-page/steps/steps.svg" alt="steps" />
+            </div>
+
+            <div class="absolute top-0 bottom-0 right-0 left-0 -z-10">
+              <img
+                class="w-full h-full bg-cover"
+                src="./public/landing-page/steps/background.svg"
+                alt="background"
+              />
+            </div>
+          </div>
+
+          <div class="text-[#09132c]">
+            <h2 class="text-2xl md:text-4xl">
+              Effortless setup in just 3 Steps
+            </h2>
+            <div class="mt-8 flex gap-4">
+              <span
+                ><img
+                  src="./public/landing-page/steps/arow-orange.svg"
+                  alt="icon"
+              /></span>
+              <div>
+                <h3 class="text-xl font-semibold">Sign Up</h3>
+                <p class="text-sm text-black/60">
+                  Create your account and add users.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-4">
+              <span
+                ><img
+                  src="./public/landing-page/steps/arow-green.svg"
+                  alt="icon"
+              /></span>
+              <div>
+                <h3 class="text-xl font-semibold">Select a Number</h3>
+                <p class="text-sm text-black/60">
+                  Choose a custom or existing number.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-4">
+              <span
+                ><img
+                  src="./public/landing-page/steps/arow-blue.svg"
+                  alt="icon"
+              /></span>
+              <div>
+                <h3 class="text-xl font-semibold">Start Calling</h3>
+                <p class="text-sm text-black/60">
+                  Begin seamless communication instantly.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="/"
+              class="bg-primary text-secondary px-8 py-3 w-fit rounded-lg mt-6 inline-block"
+            >
+              <button>Get Started Today</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- END STEPS SECTION -->
+
+      <!-- START TESTIMONIAL SECTION -->
+      <section class="p-16">
+        <h2
+          class="text-2xl md:text-4xl text-[#060e19] max-w-[38rem] mx-auto text-center"
+        >
+          Trusted by thousands of users
+        </h2>
+        <p
+          class="text-xl text-[#4e5459] max-w-[41rem] mx-auto text-center mt-4 mb-8"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          scelerisque tellus interdum venenatis auctor et nibh. Rhoncus a, sed
+          lobortis nisi.
+        </p>
+
+        <!-- START USERS REVIEW CARDS -->
+        <div class="grid grid-cols-3 gap-8 w-fit mx-auto">
+          <div class="p-10 shadow-lg rounded-xl space-y-6 max-w-sm">
+            <div class="flex gap-4">
+              <img
+                class="w-fit h-fit"
+                src="./public/landing-page/testimonials/quote.svg"
+                alt="quote"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                at unde modi autem ratione soluta, quasi ab reiciendis. Enim,
+                nisi.
+              </p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <div
+                class="row-span-2 rounded-full w-20 aspect-square overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./public/landing-page/testimonials/user1.png"
+                  alt="user"
+                />
+              </div>
+              <div>
+                <h3 class="text-xl">Wilson Bergson</h3>
+                <span class="text-sm">Marketing manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-10 shadow-lg rounded-xl space-y-6 max-w-sm">
+            <div class="flex gap-4">
+              <img
+                class="w-fit h-fit"
+                src="./public/landing-page/testimonials/quote.svg"
+                alt="quote"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                at unde modi autem ratione soluta, quasi ab reiciendis. Enim,
+                nisi.
+              </p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <div
+                class="row-span-2 rounded-full w-20 aspect-square overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./public/landing-page/testimonials/user1.png"
+                  alt="user"
+                />
+              </div>
+              <div>
+                <h3 class="text-xl">Wilson Bergson</h3>
+                <span class="text-sm">Marketing manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-10 shadow-lg rounded-xl space-y-6 max-w-sm">
+            <div class="flex gap-4">
+              <img
+                class="w-fit h-fit"
+                src="./public/landing-page/testimonials/quote.svg"
+                alt="quote"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                at unde modi autem ratione soluta, quasi ab reiciendis. Enim,
+                nisi.
+              </p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <div
+                class="row-span-2 rounded-full w-20 aspect-square overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./public/landing-page/testimonials/user1.png"
+                  alt="user"
+                />
+              </div>
+              <div>
+                <h3 class="text-xl">Wilson Bergson</h3>
+                <span class="text-sm">Marketing manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END USERS REVIEW CARDS -->
+      </section>
+      <!-- END TESTIMONIAL SECTION -->
+
+      <!-- START COMMUNICATION SECTION -->
+      <section class="p-16">
+        <div class="flex justify-center gap-8 items-center">
+          <div class="space-y-6">
+            <h2 class="text-2xl md:text-4xl max-w-[37rem]">
+              Tired of Traditional Communication Systems?
+            </h2>
+            <p class="max-w-[32rem]">
+              Leave behind the complexities of outdated solutions. Simplify your
+              communication and grow with us.
+            </p>
+            <a
+              href="/"
+              class="inline-block px-6 py-2 rounded-lg bg-primary text-secondary w-fit"
+            >
+              <button>Get your New Number now</button>
+            </a>
+          </div>
+
+          <div>
+            <img
+              src="./public/landing-page/communication/icon.svg"
+              alt="communication"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- END COMMUNICATION SECTION -->
+      <!-- START FAQ SECTION -->
+      <section
+        class="cu-landing__faq p-16 grid grid-cols-2 gap-28 items-center"
+      >
+        <div class="justify-self-end">
+          <h2 class="text-[#5a6a9d]">Got Questions? We Have Answers!</h2>
+          <div><img src="./public/landing-page/fqa/icon.svg" alt="fqa" /></div>
+        </div>
+
+        <div class="max-w-3xl">
+          <!-- FAQ Item 1 -->
+          <div class="mb-6">
+            <button
+              onclick="toggleAnswer('answer1')"
+              class="cu-question active w-full text-left flex justify-between items-center p-8 bg-gray-200 rounded-t-lg"
+            >
+              How does the service work?
+              <span>
+                <img
+                  id="answer1_icon"
+                  src="./public/landing-page/fqa/arrow-close.svg"
+                  alt="Toggle Icon"
+                  class="w-6 h-6"
+                />
+              </span>
+            </button>
+            <p id="answer1" class="cu-answer p-8 bg-gray-200 rounded-b-lg">
+              In mi nulla, fringilla vestibulum.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="mb-6">
+            <button
+              onclick="toggleAnswer('answer2')"
+              class="cu-question w-full text-left flex justify-between items-center p-8 bg-gray-200 rounded-t-lg"
+            >
+              Can I keep my existing phone number?
+              <span>
+                <img
+                  id="answer2_icon"
+                  src="./public/landing-page/fqa/arrow-open.svg"
+                  alt="Toggle Icon"
+                  class="w-6 h-6"
+                />
+              </span>
+            </button>
+            <p
+              id="answer2"
+              class="cu-answer p-8 bg-gray-200 rounded-b-lg hidden"
+            >
+              Yes, you can keep your existing phone number when you switch to
+              our service.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="mb-6">
+            <button
+              onclick="toggleAnswer('answer3')"
+              class="cu-question w-full text-left flex justify-between items-center p-8 bg-gray-200 rounded-t-lg"
+            >
+              How does the service work?
+              <span>
+                <img
+                  id="answer3_icon"
+                  src="./public/landing-page/fqa/arrow-open.svg"
+                  alt="Toggle Icon"
+                  class="w-6 h-6"
+                />
+              </span>
+            </button>
+            <p
+              id="answer3"
+              class="cu-answer p-8 bg-gray-200 rounded-b-lg hidden"
+            >
+              In mi nulla, fringilla vestibulum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END FAQ SECTION -->
+    </main>
+
+    <footer class="bg-primary text-secondary">
+      <section
+        class="flex flex-col items-center justify-center gap-6 py-16 px-16"
+      >
+        <h2 class="text-center text-2xl md:text-4xl">
+          Ready to Upgrade Your <span class="block">Communication?</span>
+        </h2>
+        <p class="text-base md:text-lg font-light text-secondary/80">
+          Voice. Video. Collaboration. All in one place.
+        </p>
+        <button class="bg-secondary text-primary px-4 py-2 rounded-lg">
+          Get Started Today
+        </button>
+      </section>
+
+      <section class="grid grid-cols-3 gap-6 py-16 px-16">
+        <div class="cu-landing__footer__list">
+          <h3>services</h3>
+          <ul>
+            <a href="/">
+              <li>Cras convallis</li>
+            </a>
+            <a href="/">
+              <li>Vestibulum faucibus</li>
+            </a>
+            <a href="/">
+              <li>Quisque lacinia purus</li>
+            </a>
+            <a href="/">
+              <li>Aliquam nec ex</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="cu-landing__footer__list">
+          <h3>legal</h3>
+          <ul>
+            <a href="/">
+              <li>Suspendisse porttitor</li>
+            </a>
+            <a href="/">
+              <li>Nam posuere</li>
+            </a>
+            <a href="/">
+              <li>Curabitur egestas</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-12">
+          <div class="flex gap-6 items-center">
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/facebook.svg"
+                alt="facebook"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/linkedin.svg"
+                alt="linkedin"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/twitter.svg"
+                alt="twitter"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/instegram.svg"
+                alt="instagram"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="border bg-primary w-fit flex gap-2 py-2 px-3 rounded-lg"
+            >
+              <img
+                class="w-6 h-6"
+                src="./public/icons/earth.svg"
+                alt="select language"
+              />
+              <select
+                class="bg-primary w-10 md:w-60 focus:border-none"
+                name="language"
+                id="cu-language"
+              >
+                <option value="en">English - EN</option>
+                <option value="ar">Arabic - AR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

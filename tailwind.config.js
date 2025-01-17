@@ -1,18 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.{html,js}'],
+  content: ["./*.{html,js}"],
   theme: {
-    colors: {
-      background: '#0f172a',
-      backgroundDarker: '#0a101e',
-      primary: '#35b4ed',
-      secondary: '#94a3b8',
-      dark: '#21243D',
-      light: '#EDF7FA',
-      white: '#e2e8f0',
-      red: '#FF6464',
+    extend: {
+      colors: {
+        backgroundDarker: "#0a101e",
+        primary: "hsl(var(--primary))",
+        primaryMuted: "hsl(var(--primary-muted))",
+        secondary: "hsl(var(--secondary))",
+        dark: "#21243D",
+        light: "#EDF7FA",
+        white: "#fff",
+        red: "#FF6464",
+        // messages
+        messageGreen: "hsl(var(--message-green))",
+        messageBeige: "hsl(var(--message-beige))",
+        messagePurpleLight: "hsl(var(--message-purple-light))",
+        messageText: "hsl(var(--message-text))",
+      },
+      backgroundImage: {
+        "radial-gradient-custom":
+          "radial-gradient(circle, rgba(169,37,181,1) 0%, rgba(119,22,128,1) 100%)",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
