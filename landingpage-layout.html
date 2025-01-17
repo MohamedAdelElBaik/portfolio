@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+    <header class="bg-primary text-secondary">
+      <ul class="flex justify-end items-center gap-6 py-6 px-16">
+        <a href="/" class="font-semibold border-b-2">
+          <li>Home</li>
+        </a>
+        <a href="/pricing&plans.html">
+          <li>Pricing & Plans</li>
+        </a>
+        <a
+          href="/signup.html"
+          class="uppercase bg-secondary text-primary ml-4 px-4 py-2 rounded-xl"
+        >
+          <li>Sign in</li>
+        </a>
+      </ul>
+    </header>
+
+    <main class=""></main>
+
+    <footer class="bg-primary text-secondary">
+      <section
+        class="flex flex-col items-center justify-center gap-6 py-16 px-16"
+      >
+        <h2 class="text-center text-2xl md:text-4xl">
+          Ready to Upgrade Your <span class="block">Communication?</span>
+        </h2>
+        <p class="text-base md:text-lg font-light text-secondary/80">
+          Voice. Video. Collaboration. All in one place.
+        </p>
+        <button class="bg-secondary text-primary px-4 py-2 rounded-lg">
+          Get Started Today
+        </button>
+      </section>
+
+      <section class="grid grid-cols-3 gap-6 py-16 px-16">
+        <div class="cu-landing__footer__list">
+          <h3>services</h3>
+          <ul>
+            <a href="/">
+              <li>Cras convallis</li>
+            </a>
+            <a href="/">
+              <li>Vestibulum faucibus</li>
+            </a>
+            <a href="/">
+              <li>Quisque lacinia purus</li>
+            </a>
+            <a href="/">
+              <li>Aliquam nec ex</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="cu-landing__footer__list">
+          <h3>legal</h3>
+          <ul>
+            <a href="/">
+              <li>Suspendisse porttitor</li>
+            </a>
+            <a href="/">
+              <li>Nam posuere</li>
+            </a>
+            <a href="/">
+              <li>Curabitur egestas</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-12">
+          <div class="flex gap-6 items-center">
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/facebook.svg"
+                alt="facebook"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/linkedin.svg"
+                alt="linkedin"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/twitter.svg"
+                alt="twitter"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/instegram.svg"
+                alt="instagram"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="border bg-primary w-fit flex gap-2 py-2 px-3 rounded-lg"
+            >
+              <img
+                class="w-6 h-6"
+                src="./public/icons/earth.svg"
+                alt="select language"
+              />
+              <select
+                class="bg-primary w-10 md:w-60 focus:border-none"
+                name="language"
+                id="cu-language"
+              >
+                <option value="en">English - EN</option>
+                <option value="ar">Arabic - AR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

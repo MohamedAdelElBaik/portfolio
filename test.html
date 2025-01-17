@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curved Background</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .curved-background {
+        background-color: #0078d4; /* Adjust the color to match your design */
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .curved-background::after {
+        content: "";
+        position: absolute;
+        bottom: -80px;
+        left: -10%;
+        width: 120%;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        z-index: 2;
+      }
+      .curved-background::before {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        left: -10%;
+        width: 120%;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="curved-background">
+      <div class="content">
+        <h1>Ready to Upgrade Your Communication?</h1>
+        <p>Voice.Video.Collaboration.All in one place.</p>
+        <button>Get Started Today</button>
+      </div>
+    </div>
+  </body>
+</html>
