@@ -1,28 +1,18 @@
-const navList = document.querySelector('.nav-list');
-const navItems = document.querySelectorAll('.nav-item');
-const navIcon = document.querySelector('.nav-icon');
+function toggleAnswer(id) {
+  const answer = document.getElementById(id);
+  const icon = document.getElementById(`${id}_icon`);
+  const question = answer.previousElementSibling;
 
-const hidden = 'hiddenTag';
-const active = 'active';
+  // Toggle answer visibility
+  answer.classList.toggle("hidden");
 
-function addClass(tag, className) {
-  tag.classList.add(className);
+  // Toggle question active state
+  question.classList.toggle("active");
+
+  // Toggle icon
+  if (answer.classList.contains("hidden")) {
+    icon.src = "./public/landing-page/fqa/arrow-open.svg";
+  } else {
+    icon.src = "./public/landing-page/fqa/arrow-close.svg";
+  }
 }
-function removeClass(tag, className) {
-  tag.classList.remove(className);
-}
-
-navIcon.addEventListener('click', () => {
-  // addClass(navIcon, hidden);
-  // removeClass(navList, hidden);
-  navList.classList.toggle(hidden);
-});
-
-console.log(navItems);
-navItems.forEach((item) => {
-  return item.addEventListener('click', (tag) => {
-    // addClass(tag.target, active);
-    // removeClass(navIcon, hidden);
-    addClass(navList, hidden);
-  });
-});

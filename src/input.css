@@ -269,4 +269,26 @@
   .cu-landing__footer__list ul a:hover {
     color: hsl(var(--secondary));
   }
+
+  .cu-landing__faq .cu-question,
+  .cu-landing__faq .cu-answer {
+    padding: 2rem;
+    background-color: #e9e8e8bd;
+  }
+
+  .cu-landing__faq .cu-question {
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .cu-landing__faq .cu-question.active {
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: #5164ed;
+    color: white;
+  }
+
+  .cu-landing__faq .cu-answer {
+    padding: 2rem;
+    background-color: #e9e8e8bd;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
 }
