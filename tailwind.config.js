@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         backgroundDarker: "#0a101e",
         primary: "hsl(var(--primary))",
-        primaryMuted: "hsl(var(--primary-muted))",
+        primaryMuted: "hsl(var(--primary-mkkuted))",
         secondary: "hsl(var(--secondary))",
         dark: "#21243D",
         light: "#EDF7FA",

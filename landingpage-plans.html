@@ -59,7 +59,10 @@
             <li>Email support</li>
             <li>5GB storage</li>
           </ul>
-          <button class="bg-[#ecf7fd] text-[#42B4EE] px-4 py-3 rounded-lg">
+          <button
+            id="openPopup"
+            class="bg-[#ecf7fd] text-[#42B4EE] px-4 py-3 rounded-lg"
+          >
             START FREE TRIAL
           </button>
         </div>
@@ -119,6 +122,74 @@
           <button class="bg-[#ecf7fd] text-[#42B4EE] px-4 py-3 rounded-lg">
             CONTACT SALES
           </button>
+        </div>
+      </section>
+
+      <!-- Popup Section -->
+      <section class="cu-popup-overlay" id="popupOverlay">
+        <div class="cu-popup-content space-y-2">
+          <button class="cu-close-btn" id="closePopup">&times;</button>
+          <div
+            class="bg-[#fef8ff] px-5 py-3 rounded-md border border-primary space-y-1"
+          >
+            <div class="flex items-center justify-between">
+              <h2 class="text-primary text-2xl">Classic</h2>
+              <p class="text-[#0b3048] font-semibold">pay with</p>
+            </div>
+            <p class="text-[#0b3048] text-3xl">
+              30<span class="text-xl">/mo</span>
+            </p>
+            <p class="text-[#5a6a9d]">Billed Annually</p>
+          </div>
+
+          <form action="" class="space-y-2">
+            <div class="w-full flex flex-col gap-1">
+              <label for="" class="font-medium">Choose Number</label>
+              <select
+                class="p-2 border rounded-md"
+                placeholder="Enter full name"
+              >
+                <option value="england">2019892582</option>
+                <option value="india">2621481910</option>
+                <option value="canada">7893220502</option>
+              </select>
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+              <label for="" class="font-medium">Country</label>
+              <input
+                class="p-2 border rounded-md"
+                type="text"
+                placeholder="country name"
+              />
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+              <label for="" class="font-medium">City</label>
+              <input
+                class="p-2 border rounded-md"
+                type="text"
+                placeholder="city name"
+              />
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+              <label for="" class="font-medium">Area code</label>
+              <input
+                class="p-2 border rounded-md"
+                type="text"
+                placeholder="256548"
+              />
+            </div>
+
+            <div class="w-full flex justify-center pt-8">
+              <button
+                class="bg-primary text-secondary px-4 py-[0.6rem] rounded-md"
+              >
+                Proceed to Checkout
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -256,6 +327,31 @@
             suffixSpan.textContent = "/mo";
           }
         });
+      });
+    </script>
+
+    <!-- popup script -->
+    <script>
+      // JavaScript to handle popup open/close
+      const openPopupButton = document.getElementById("openPopup");
+      const closePopupButton = document.getElementById("closePopup");
+      const popupOverlay = document.getElementById("popupOverlay");
+
+      // Open popup
+      openPopupButton.addEventListener("click", () => {
+        popupOverlay.style.display = "flex";
+      });
+
+      // Close popup
+      closePopupButton.addEventListener("click", () => {
+        popupOverlay.style.display = "none";
+      });
+
+      // Close popup when clicking outside the content
+      popupOverlay.addEventListener("click", (event) => {
+        if (event.target === popupOverlay) {
+          popupOverlay.style.display = "none";
+        }
       });
     </script>
   </body>
