@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+    <header class="bg-primary text-secondary">
+      <ul class="flex justify-end items-center gap-6 py-6 px-16">
+        <a href="/" class="font-semibold border-b-2">
+          <li>Home</li>
+        </a>
+        <a href="/pricing&plans.html">
+          <li>Pricing & Plans</li>
+        </a>
+        <a
+          href="/signup.html"
+          class="uppercase bg-secondary text-primary ml-4 px-4 py-2 rounded-xl"
+        >
+          <li>Sign in</li>
+        </a>
+      </ul>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto container my-4 md:my-16 py-4 md:py-16">
+      <section class="space-y-6">
+        <h1 class="text-[#09132c] text-3xl">Select Payment Method</h1>
+
+        <div class="max-w-xs space-y-2">
+          <div class="p-2 rounded-md border text-primary bg-[#fef8ff]">
+            <input id="payment-card" type="radio" />
+            <label for="payment-radio">Pay with card</label>
+          </div>
+
+          <div class="p-2 rounded-md border">
+            <input id="payment-crypto" type="radio" />
+            <label for="payment-radio">Pay with crypto</label>
+          </div>
+
+          <div class="p-2 rounded-md border">
+            <input id="payment-wallet" type="radio" />
+            <label for="payment-radio">Pay with wallet</label>
+          </div>
+        </div>
+
+        <form action="" class="w-full space-y-4">
+          <div class="w-full flex flex-col gap-1">
+            <label for="">Name on Card</label>
+            <input
+              class="p-2 border rounded-md"
+              type="text"
+              placeholder="Enter full name"
+            />
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label for="">Card Number</label>
+            <input
+              class="p-2 border rounded-md"
+              type="text"
+              placeholder="e.g. 4432-5612-6745-7789"
+            />
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label for="">Country</label>
+            <select class="p-2 border rounded-md" placeholder="Enter full name">
+              <option value="england">England</option>
+              <option value="india">India</option>
+              <option value="canada">Canada</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-full flex flex-col gap-1">
+              <label for="">Expire</label>
+              <input
+                class="p-2 border rounded-md"
+                type="text"
+                placeholder="12/6"
+              />
+            </div>
+
+            <div class="w-full flex flex-col gap-1">
+              <label for="">CVV</label>
+              <input
+                class="p-2 border rounded-md"
+                type="text"
+                placeholder="123"
+              />
+            </div>
+          </div>
+
+          <div class="w-full flex flex-row gap-1">
+            <input type="checkbox" />
+            <label for=""
+              >I have read and agree to the Terms and Conditions.</label
+            >
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <div class="bg-[#fef8ff] rounded-md max-w-lg px-4 py-6 space-y-6">
+          <h2 class="text-xl font-semibold">Review your card</h2>
+
+          <div class="flex gap-4">
+            <div
+              class="bg-white p-4 border rounded-md w-12 md:w-24 aspect-square overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-center"
+                src="./public/landing-page/phone-icon.svg"
+                alt="phone"
+              />
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-lg">09822830028</h3>
+              <p class="text-xl">100$</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div
+              class="bg-white p-4 border rounded-md w-12 md:w-24 aspect-square overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-center"
+                src="./public/landing-page/phone-icon.svg"
+                alt="phone"
+              />
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-lg">09822830028</h3>
+              <p class="text-xl">100$</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <input
+              type="text"
+              placeholder="Discount Code"
+              class="p-2 border rounded-md w-full"
+            />
+            <button class="bg-primary text-secondary rounded-md py-2 px-4">
+              Apply
+            </button>
+          </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm text-black/40">Subtotal</h4>
+            <p class="text-sm font-semibold">100$</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm text-black/40">Discount</h4>
+            <p class="text-sm font-semibold">-10$</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <h4 class="text-base text-black">Total<h4>
+            <p class="text-sm font-semibold">-10$</p>
+          </div>
+        </div>
+
+        <button class="bg-primary text-secondary w-full rounded-md px-4 py-[0.6rem]">Buy Now</button>
+        </div>
+
+        <div class="max-w-lg p-4 space-y-2">
+
+        <div class="flex gap-2 items-center">
+          <span>
+            <img src="./public/landing-page/lock-icon.svg" alt="secure">
+          </span>
+          <h3>Secure Checkout - SSL Encrypted</h3>
+        </div>
+
+        <p class="text-[#818ea1] ">Ensuring your financial and personal details are secure 
+during every transaction.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-secondary">
+      <section
+        class="flex flex-col items-center justify-center gap-6 py-16 px-16"
+      >
+        <h2 class="text-center text-2xl md:text-4xl">
+          Ready to Upgrade Your <span class="block">Communication?</span>
+        </h2>
+        <p class="text-base md:text-lg font-light text-secondary/80">
+          Voice. Video. Collaboration. All in one place.
+        </p>
+        <button class="bg-secondary text-primary px-4 py-2 rounded-lg">
+          Get Started Today
+        </button>
+      </section>
+
+      <section class="grid grid-cols-3 gap-6 py-16 px-16">
+        <div class="cu-landing__footer__list">
+          <h3>services</h3>
+          <ul>
+            <a href="/">
+              <li>Cras convallis</li>
+            </a>
+            <a href="/">
+              <li>Vestibulum faucibus</li>
+            </a>
+            <a href="/">
+              <li>Quisque lacinia purus</li>
+            </a>
+            <a href="/">
+              <li>Aliquam nec ex</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="cu-landing__footer__list">
+          <h3>legal</h3>
+          <ul>
+            <a href="/">
+              <li>Suspendisse porttitor</li>
+            </a>
+            <a href="/">
+              <li>Nam posuere</li>
+            </a>
+            <a href="/">
+              <li>Curabitur egestas</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-12">
+          <div class="flex gap-6 items-center">
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/facebook.svg"
+                alt="facebook"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/linkedin.svg"
+                alt="linkedin"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/twitter.svg"
+                alt="twitter"
+              />
+            </div>
+            <div
+              class="p-3 rounded-full bg-secondary/10 w-14 h-14 overflow-hidden"
+            >
+              <img
+                class="object-contain w-full h-full"
+                src="./public/social/instegram.svg"
+                alt="instagram"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="border bg-primary w-fit flex gap-2 py-2 px-3 rounded-lg"
+            >
+              <img
+                class="w-6 h-6"
+                src="./public/icons/earth.svg"
+                alt="select language"
+              />
+              <select
+                class="bg-primary w-10 md:w-60 focus:border-none"
+                name="language"
+                id="cu-language"
+              >
+                <option value="en">English - EN</option>
+                <option value="ar">Arabic - AR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
